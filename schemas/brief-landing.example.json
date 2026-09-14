@@ -1,0 +1,138 @@
+{
+  "perfil": {
+    "usuario": null,
+    "url": null,
+    "nombre_comercial": null,
+    "categoria_instagram": null,
+    "rubro": null,
+    "seguidores": null,
+    "verificado": null,
+    "idioma": null,
+    "pais_region": null
+  },
+  "negocio": {
+    "que_vende": null,
+    "propuesta_valor": null,
+    "diferenciales": [],
+    "modalidad": null,
+    "zona_cobertura": null,
+    "confianza": 0.0
+  },
+  "identidad_visual": {
+    "logo": {
+      "tipo": null,
+      "descripcion": null,
+      "tiene_tagline": null,
+      "fondo": null,
+      "logo_usable": null,
+      "motivo": null
+    },
+    "paleta": [
+      {
+        "hex": null,
+        "rol": null,
+        "origen": "observado"
+      }
+    ],
+    "contraste_aa": [],
+    "tipografia": {
+      "estilo_detectado": null,
+      "google_font_titulos": null,
+      "google_font_cuerpo": null
+    },
+    "estilo_fotografico": null,
+    "recursos_graficos": [],
+    "consistencia_grilla": null
+  },
+  "contenido": {
+    "bio_textual": null,
+    "link_en_bio": null,
+    "cta_actual": null,
+    "highlights": [],
+    "temas_recurrentes": [],
+    "frases_propias": [],
+    "hashtags": [],
+    "tono_de_voz": {
+      "adjetivos": [],
+      "si": [],
+      "no": []
+    }
+  },
+  "oferta": {
+    "productos_servicios": [
+      {
+        "nombre": null,
+        "descripcion": null,
+        "precio": null,
+        "origen": "observado"
+      }
+    ],
+    "promociones": [],
+    "formas_de_pago": []
+  },
+  "prueba_social": {
+    "testimonios": [],
+    "resultados": [],
+    "menciones_prensa": [],
+    "certificaciones": [],
+    "engagement_estimado": null
+  },
+  "contacto": {
+    "whatsapp": null,
+    "telefono": null,
+    "email": null,
+    "direccion": null,
+    "horarios": null,
+    "otras_redes": [],
+    "canal_de_venta_actual": null
+  },
+  "publico": {
+    "cliente_ideal": null,
+    "dolores": [],
+    "objeciones": [],
+    "personas": []
+  },
+  "assets": [
+    {
+      "descripcion": null,
+      "seccion_sugerida": null,
+      "calidad": null,
+      "problema": null
+    }
+  ],
+  "landing": {
+    "objetivo_primario": null,
+    "objetivo_secundario": null,
+    "secciones": [
+      {
+        "orden": 1,
+        "nombre": null,
+        "funcion": null,
+        "copy": null
+      }
+    ],
+    "headline_variantes": [],
+    "subheadline": null,
+    "beneficios": [],
+    "faq": [
+      {
+        "pregunta": null,
+        "respuesta": null
+      }
+    ],
+    "ctas": [
+      {
+        "texto": null,
+        "accion": null
+      }
+    ],
+    "seo": {
+      "title": null,
+      "meta_description": null,
+      "keywords": []
+    },
+    "alt_texts": []
+  },
+  "advertencias": [],
+  "datos_faltantes": []
+}
