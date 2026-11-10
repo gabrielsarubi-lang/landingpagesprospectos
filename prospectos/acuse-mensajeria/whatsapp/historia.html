@@ -1,0 +1,50 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800;900&family=Montserrat:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=block" rel="stylesheet">
+<style>
+:root{--blue:#0055FF;--ink:#14171F;--muted:#545A66;--line:#E2E5EB;--ok:#12875A;--ok-soft:#E1F4EA}
+*{margin:0;box-sizing:border-box}
+body{width:1080px;height:1920px;overflow:hidden;font-family:"Source Sans 3",sans-serif}
+.c{position:relative;width:1080px;height:1920px;background:radial-gradient(120% 60% at 50% 0%,#1F6DFF 0%,#0055FF 45%,#0041C7 100%);color:#fff;padding:170px 90px 0;display:flex;flex-direction:column;align-items:center;text-align:center;overflow:hidden}
+.wm{position:absolute;left:-260px;bottom:120px;width:1100px;opacity:.07}
+.marca{display:flex;align-items:center;gap:16px;font-family:Montserrat;font-weight:900;font-size:66px;letter-spacing:-.045em;line-height:1;text-align:left}
+.marca small{display:block;font-size:19px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-top:6px;opacity:.9}
+.pre{margin-top:70px;font-family:"Libre Franklin";font-weight:700;font-size:40px;opacity:.9}
+h1{font-family:"Libre Franklin";font-weight:900;font-size:118px;line-height:1;letter-spacing:-.035em;margin-top:22px}
+h1 em{font-style:normal;color:#0055FF;background:#fff;padding:0 18px;border-radius:18px;display:inline-block;margin:8px 0}
+.card{position:relative;z-index:1;margin-top:56px;width:100%;background:#fff;color:var(--ink);text-align:left;border-radius:34px;box-shadow:0 40px 90px rgba(5,20,70,.35);padding:42px;display:grid;gap:26px;transform:rotate(-1deg)}
+.top{display:flex;justify-content:space-between;align-items:center}
+.cod{font-family:"Libre Franklin";font-weight:800;font-size:34px}
+.tag{background:var(--ok-soft);color:var(--ok);font-weight:700;font-size:30px;padding:10px 22px;border-radius:999px}
+.step{display:grid;grid-template-columns:24px 1fr;gap:20px;font-size:30px;line-height:1.3}
+.step b{display:block;font-family:"Libre Franklin";font-size:32px}
+.step span{color:var(--muted)}
+.dot{width:24px;height:24px;border-radius:50%;background:var(--blue);margin-top:7px}.dot.ok{background:var(--ok)}
+.tags{display:flex;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line);padding-top:26px}
+.tags span{font-size:26px;font-weight:700;padding:8px 16px;border-radius:12px;background:#F4F6F9}
+.tags span:first-child{background:var(--ok-soft);color:var(--ok)}
+.checks{margin-top:56px;display:grid;gap:22px;text-align:left;font-size:38px;font-weight:600;align-self:stretch;padding-left:20px}
+.checks div{display:flex;align-items:center;gap:20px}
+.checks i{flex:none;width:52px;height:52px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.checks svg{width:30px;height:30px;stroke:#0055FF;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.cta{margin-top:56px;background:#fff;color:#0055FF;font-family:"Libre Franklin";font-weight:800;font-size:46px;padding:30px 64px;border-radius:999px;box-shadow:0 20px 40px rgba(5,20,70,.3)}
+.web{margin-top:28px;font-family:"Libre Franklin";font-weight:700;font-size:36px}
+.zona{margin-top:10px;font-size:30px;opacity:.85}
+</style></head><body><div class="c">
+<svg width="0" height="0" style="position:absolute"><symbol id="g" viewBox="0 0 48 48"><polygon points="27,27 44,4 33,27"/><polygon points="36,31 47.5,23 32,29"/><polygon points="12,31 4,9 17,29"/><polygon points="4,9 0,16 6.5,12"/><polygon points="11,31 37,31 24,38"/><polygon points="11,31 24,25 37,31"/><polygon points="13,28 9,2 29,27"/><polygon points="13,28 9,2 19,27"/></symbol></svg>
+<svg class="wm" viewBox="0 0 48 40" fill="#FFFFFF"><use href="#g"/></svg>
+<div class="marca"><svg viewBox="0 0 48 48" width="96" height="96" fill="#FFFFFF" stroke="#0055FF" stroke-width="1.1" stroke-linejoin="round"><use href="#g"/></svg><div>acuse<small>Motomensajería</small></div></div>
+<p class="pre">¿Mandás papeles o paquetes en moto?</p>
+<h1>Ahora sí,<br><em>es seguro</em><br>pedir una moto.</h1>
+<div class="card">
+  <div class="top"><span class="cod">Tu envío</span><span class="tag">✓ Entregado 11:42</span></div>
+  <div class="step"><span class="dot"></span><div><b>Retirado 10:15</b><span>Motoquero identificado, con nombre y legajo</span></div></div>
+  <div class="step"><span class="dot ok"></span><div><b>Entregado 11:42</b><span>Nombre, DNI y cargo de quien recibió</span></div></div>
+  <div class="tags"><span>✓ QR verificado</span><span>Fotos</span><span>Hora y GPS</span><span>Constancia</span></div>
+</div>
+<div class="checks">
+  <div><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>Trámites y documentación para empresas</div>
+  <div><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>Paquetes en el día por CABA y GBA</div>
+</div>
+<div class="cta">Pedí tu moto hoy →</div>
+<div class="web">acusemensajeria.com.ar</div>
+</div></body></html>
