@@ -1,0 +1,138 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800;900&family=Montserrat:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=block" rel="stylesheet">
+<style>
+:root{--blue:#0055FF;--ink:#14171F;--muted:#545A66;--line:#E2E5EB;--ok:#12875A;--ok-soft:#E1F4EA;--corp:#0B1F4D;--gold:#C9A961;--env:#00A8F0;--sun:#FFC21A}
+*{margin:0;box-sizing:border-box}
+body{background:#ccc;font-family:"Source Sans 3",sans-serif;color:var(--ink)}
+.p{position:relative;width:1080px;height:1350px;overflow:hidden;padding:96px 90px;display:flex;flex-direction:column}
+.blue{background:radial-gradient(120% 70% at 50% 0%,#1F6DFF,#0055FF 50%,#0041C7);color:#fff}
+.light{background:linear-gradient(180deg,#fff,#EEF3FF)}
+.corp{background:var(--corp);color:#fff}
+.env{background:var(--env);color:#fff}
+.marca{display:flex;align-items:center;gap:12px;font-family:Montserrat;font-weight:900;font-size:44px;letter-spacing:-.045em;line-height:1}
+.marca small{display:block;font-size:13px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-top:5px}
+.marca b{font-weight:700;font-size:30px;letter-spacing:-.01em;margin-left:4px;opacity:.9}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-family:"Libre Franklin";font-weight:700;font-size:28px}
+.eyebrow{font-family:"Libre Franklin";font-weight:700;font-size:28px;letter-spacing:.14em;text-transform:uppercase;margin-top:80px;opacity:.85}
+h1{font-family:"Libre Franklin";font-weight:900;font-size:112px;line-height:1;letter-spacing:-.035em;margin-top:24px}
+h2{font-family:"Libre Franklin";font-weight:800;font-size:84px;line-height:1.04;letter-spacing:-.03em;margin-top:22px}
+em{font-style:normal}
+.hl{color:var(--blue);background:#fff;padding:0 16px;border-radius:16px;display:inline-block;margin:6px 0}
+.blueTxt{color:var(--blue)}
+.sub{font-size:38px;line-height:1.35;margin-top:30px;opacity:.9}
+.card{background:#fff;color:var(--ink);border-radius:30px;box-shadow:0 30px 70px rgba(5,20,70,.22);padding:40px;display:grid;gap:24px;border:1px solid var(--line)}
+.top{display:flex;justify-content:space-between;align-items:center}
+.cod{font-family:"Libre Franklin";font-weight:800;font-size:34px}
+.tag{background:var(--ok-soft);color:var(--ok);font-weight:700;font-size:30px;padding:10px 22px;border-radius:999px}
+.step{display:grid;grid-template-columns:24px 1fr;gap:20px;font-size:30px;line-height:1.3}
+.step b{display:block;font-family:"Libre Franklin";font-size:32px}
+.step span{color:var(--muted)}
+.dot{width:24px;height:24px;border-radius:50%;background:var(--blue);margin-top:7px}.dot.ok{background:var(--ok)}
+.tags{display:flex;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line);padding-top:24px}
+.tags span{font-size:26px;font-weight:700;padding:8px 16px;border-radius:12px;background:#F4F6F9}
+.tags span:first-child{background:var(--ok-soft);color:var(--ok)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:56px}
+.cmp>div{border-radius:26px;padding:34px;display:grid;gap:20px;align-content:start;font-size:29px;line-height:1.3}
+.cmp h3{font-family:"Libre Franklin";font-size:34px}
+.antes{background:#FDEAEA;color:#5A1F1F}.antes h3{color:#C62F2F}
+.con{background:var(--blue);color:#fff}
+.cmp p{display:flex;gap:12px}
+.pasos{display:grid;gap:30px;margin-top:60px}
+.paso{display:grid;grid-template-columns:90px 1fr;gap:28px;align-items:start}
+.paso .n{width:90px;height:90px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-family:"Libre Franklin";font-weight:800;font-size:44px}
+.paso b{display:block;font-family:"Libre Franklin";font-size:40px;margin-top:6px}
+.paso span{font-size:30px;color:var(--muted);line-height:1.3}
+.orgs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+.orgs div{height:96px;display:grid;place-items:center;background:rgba(255,255,255,.08);border:2px solid rgba(201,169,97,.6);border-radius:6px;font-family:"Libre Franklin";font-weight:800;font-size:34px;letter-spacing:.04em}
+.list{display:grid;gap:22px;margin-top:50px;font-size:36px;font-weight:600}
+.list div{display:flex;gap:18px;align-items:center}
+.list i{flex:none;width:50px;height:50px;border-radius:50%;display:grid;place-items:center}
+.list svg{width:28px;height:28px;fill:none;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.corp .list i{background:var(--gold)}.corp .list svg{stroke:var(--corp)}
+.env .list i{background:var(--sun)}.env .list svg{stroke:#3A2A00}
+.disc{font-size:20px;opacity:.6;margin-top:28px;line-height:1.3}
+.pill{display:inline-block;padding:10px 24px;border-radius:999px;font-family:"Libre Franklin";font-weight:800;font-size:30px}
+.wm{position:absolute;opacity:.07;pointer-events:none}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="g" viewBox="0 0 48 48"><polygon points="27,27 44,4 33,27"/><polygon points="36,31 47.5,23 32,29"/><polygon points="12,31 4,9 17,29"/><polygon points="4,9 0,16 6.5,12"/><polygon points="11,31 37,31 24,38"/><polygon points="11,31 24,25 37,31"/><polygon points="13,28 9,2 29,27"/><polygon points="13,28 9,2 19,27"/></symbol></svg>
+<template id="mw"><svg viewBox="0 0 48 48" width="68" height="68" fill="#FFFFFF" stroke="#0055FF" stroke-width="1.1" stroke-linejoin="round"><use href="#g"/></svg></template>
+
+<!-- 1 Lanzamiento -->
+<div class="p blue" id="p1">
+  <svg class="wm" style="right:-200px;bottom:-60px;width:1000px" viewBox="0 0 48 40" fill="#fff"><use href="#g"/></svg>
+  <div class="marca"><svg viewBox="0 0 48 48" width="68" height="68" fill="#FFFFFF" stroke="#0055FF" stroke-width="1.1" stroke-linejoin="round"><use href="#g"/></svg><div>acuse<small>Motomensajería</small></div></div>
+  <p class="eyebrow">Cada envío con constancia</p>
+  <h1>Ahora sí,<br><em class="hl">es seguro</em><br>pedir una moto.</h1>
+  <p class="sub">Sabés quién lleva tus cosas, cuándo las retiró y quién las recibió.</p>
+  <div class="foot"><span>CABA y Gran Buenos Aires</span><span>acusemensajeria.com.ar</span></div>
+</div>
+
+<!-- 2 Antes vs Acuse -->
+<div class="p light" id="p2">
+  <div class="marca blueTxt"><svg viewBox="0 0 48 48" width="68" height="68" fill="#0055FF" stroke="#FFFFFF" stroke-width="1.1" stroke-linejoin="round"><use href="#g"/></svg><div>acuse<small style="color:var(--ink)">Motomensajería</small></div></div>
+  <h2 style="margin-top:70px">Mandar una moto ya no es un <em class="blueTxt">acto de fe</em>.</h2>
+  <div class="cmp">
+    <div class="antes"><h3>Como era antes</h3><p>✕ No sabías quién se llevaba tus cosas.</p><p>✕ Para saber si llegó, había que llamar.</p><p>✕ Si decían "no llegó", no podías demostrarlo.</p><p>✕ El comprobante era un papel que se perdía.</p></div>
+    <div class="con"><h3>Con Acuse</h3><p>✓ Motoquero con nombre y legajo.</p><p>✓ Cada paso con hora y ubicación.</p><p>✓ Foto del sello y DNI de quien recibió.</p><p>✓ Todo guardado cuando lo necesites.</p></div>
+  </div>
+  <div class="foot blueTxt"><span>CABA y GBA</span><span>acusemensajeria.com.ar</span></div>
+</div>
+
+<!-- 3 Así queda cada entrega -->
+<div class="p blue" id="p3">
+  <div class="marca"><svg viewBox="0 0 48 48" width="68" height="68" fill="#FFFFFF" stroke="#0055FF" stroke-width="1.1" stroke-linejoin="round"><use href="#g"/></svg><div>acuse<small>Motomensajería</small></div></div>
+  <h2 style="margin-top:70px">Así queda<br>cada entrega.</h2>
+  <div class="card" style="margin-top:56px;transform:rotate(-1deg)">
+    <div class="top"><span class="cod">Tu envío</span><span class="tag">✓ Entregado 11:42</span></div>
+    <div class="step"><span class="dot"></span><div><b>Retirado 10:15</b><span>Motoquero identificado, con nombre y legajo</span></div></div>
+    <div class="step"><span class="dot ok"></span><div><b>Entregado 11:42</b><span>Nombre, DNI y cargo de quien recibió</span></div></div>
+    <div class="tags"><span>✓ QR verificado</span><span>Fotos</span><span>Hora y GPS</span><span>Constancia</span></div>
+  </div>
+  <div class="foot"><span>Si te reclaman, tenés la prueba.</span><span>acusemensajeria.com.ar</span></div>
+</div>
+
+<!-- 4 Cómo funciona -->
+<div class="p light" id="p4">
+  <div class="marca blueTxt"><svg viewBox="0 0 48 48" width="68" height="68" fill="#0055FF" stroke="#FFFFFF" stroke-width="1.1" stroke-linejoin="round"><use href="#g"/></svg><div>acuse<small style="color:var(--ink)">Motomensajería</small></div></div>
+  <h2 style="margin-top:70px">De tu mano a destino, <em class="blueTxt">sin perderle el rastro</em>.</h2>
+  <div class="pasos">
+    <div class="paso"><span class="n">1</span><div><b>Pedís la moto</b><span>Qué hay que llevar, de dónde y a dónde.</span></div></div>
+    <div class="paso"><span class="n">2</span><div><b>Retiramos con QR</b><span>Escaneo, foto y registro de quién lo entregó.</span></div></div>
+    <div class="paso"><span class="n">3</span><div><b>Seguimos cada paso</b><span>Con hora y ubicación.</span></div></div>
+    <div class="paso"><span class="n">4</span><div><b>Entregamos con constancia</b><span>Foto del sello, nombre, DNI y cargo de quien recibió.</span></div></div>
+  </div>
+  <div class="foot blueTxt"><span>CABA y GBA</span><span>acusemensajeria.com.ar</span></div>
+</div>
+
+<!-- 5 Corporativo -->
+<div class="p corp" id="p5">
+  <div class="marca"><svg viewBox="0 0 48 48" width="68" height="68" fill="#FFFFFF" stroke="#0B1F4D" stroke-width="1.1" stroke-linejoin="round"><use href="#g"/></svg><div>acuse<b style="color:var(--gold)">Corporativo</b></div></div>
+  <h2 style="margin-top:70px">Especialistas en trámites, <em style="color:var(--gold)">con constancia</em>.</h2>
+  <div class="orgs"><div>IGJ</div><div>ARCA</div><div>AGIP</div><div>ARBA</div><div>RPI</div><div>PJN</div><div>CECBA</div><div>DGA</div></div>
+  <div class="list">
+    <div><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>Gestiones bancarias con constancia sellada</div>
+    <div><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>Firma y devolución de contratos</div>
+    <div><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>Cuenta corriente y moto fija</div>
+  </div>
+  <p class="disc">Acuse no es un organismo público ni tiene relación oficial con los organismos mencionados.</p>
+  <div class="foot"><span>Estudios · Escribanías · Contables</span><span>acusemensajeria.com.ar</span></div>
+</div>
+
+<!-- 6 Envíos -->
+<div class="p env" id="p6">
+  <svg class="wm" style="right:-180px;top:200px;width:900px;opacity:.12" viewBox="0 0 48 40" fill="#fff"><use href="#g"/></svg>
+  <div class="marca"><svg viewBox="0 0 48 48" width="68" height="68" fill="#FFFFFF" stroke="#00A8F0" stroke-width="1.1" stroke-linejoin="round"><use href="#g"/></svg><div>acuse<b>Envíos</b></div></div>
+  <span class="pill" style="background:var(--sun);color:#3A2A00;margin-top:70px;align-self:flex-start">En el día · CABA y GBA</span>
+  <h2>Tus paquetes llegan.<br>Y lo podés demostrar.</h2>
+  <div class="list">
+    <div><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>Retiro en tu local</div>
+    <div><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>Paquetes chicos y medianos</div>
+    <div><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>Envíos programados</div>
+    <div><i><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg></i>Foto y DNI de quien recibió</div>
+  </div>
+  <div class="foot"><span>Tiendas online · Comercios</span><span>acusemensajeria.com.ar</span></div>
+</div>
+
+<!-- Destacadas -->
+<div id="hl" style="display:flex;flex-wrap:wrap;gap:0">
+<div class="h" id="h-corporativo" style="width:1080px;height:1080px;background:#0055FF;display:grid;place-items:center"><svg viewBox="0 0 24 24" width="460" height="460" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5h6v2M4 12h16"/></svg></div><div class="h" id="h-envios" style="width:1080px;height:1080px;background:#0055FF;display:grid;place-items:center"><svg viewBox="0 0 24 24" width="460" height="460" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div><div class="h" id="h-seguridad" style="width:1080px;height:1080px;background:#0055FF;display:grid;place-items:center"><svg viewBox="0 0 24 24" width="460" height="460" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><div class="h" id="h-como-funciona" style="width:1080px;height:1080px;background:#0055FF;display:grid;place-items:center"><svg viewBox="0 0 24 24" width="460" height="460" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div class="h" id="h-cotizar" style="width:1080px;height:1080px;background:#0055FF;display:grid;place-items:center"><svg viewBox="0 0 24 24" width="460" height="460" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg></div></div></body></html>
