@@ -8,7 +8,7 @@
 - **Foto de perfil:** `perfil.png`
 - **Enlace:** https://acusemensajeria.com.ar
 
-**Bio** (140 de 150 caracteres):
+**Bio** (145 de 150 caracteres):
 
 ```
 📦 Mensajería en moto con constancia
