@@ -1,0 +1,95 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800;900&family=Montserrat:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=block" rel="stylesheet">
+<style>
+:root{--blue:#0055FF;--ok:#12875A;--corp:#0B1F4D;--gold:#C9A961;--env:#00A8F0;--sun:#FFC21A}
+*{margin:0;box-sizing:border-box}
+body{background:#333;font-family:"Source Sans 3",sans-serif;color:#fff}
+.s{position:relative;width:1080px;height:1440px;overflow:hidden;background-repeat:no-repeat;display:flex;flex-direction:column;padding:90px 80px 90px}
+.s::before{content:"";position:absolute;inset:0;z-index:0}
+.s>*{position:relative;z-index:1}
+.top{display:flex;align-items:center;justify-content:space-between}
+.marca{display:flex;align-items:center;gap:12px;font-family:Montserrat;font-weight:900;font-size:50px;letter-spacing:-.045em;line-height:1}
+.marca small{display:block;font-size:14px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-top:5px}
+.pill{font-family:"Libre Franklin";font-weight:800;font-size:28px;padding:12px 26px;border-radius:999px;letter-spacing:.02em}
+h1{font-family:"Libre Franklin";font-weight:900;font-size:100px;line-height:1;letter-spacing:-.035em;text-shadow:0 6px 30px rgba(0,0,0,.35)}
+.sub{font-size:36px;line-height:1.35;margin-top:24px;text-shadow:0 2px 14px rgba(0,0,0,.5)}
+.panel{margin-top:44px;background:rgba(10,14,28,.62);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.16);border-radius:30px;padding:38px 40px;display:grid;gap:24px}
+.row{display:flex;gap:20px;align-items:flex-start;font-size:33px;line-height:1.25;font-weight:600}
+.row small{display:block;font-size:26px;font-weight:400;opacity:.8;margin-top:4px}
+.ic{flex:none;width:56px;height:56px;border-radius:16px;display:grid;place-items:center}
+.ic svg{width:30px;height:30px;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.n{flex:none;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font-family:"Libre Franklin";font-weight:800;font-size:30px}
+.orgs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.orgs div{height:78px;display:grid;place-items:center;border:2px solid var(--gold);border-radius:6px;font-family:"Libre Franklin";font-weight:800;font-size:28px;background:rgba(11,31,77,.55)}
+.foot{margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:14px}
+.cta{font-family:"Libre Franklin";font-weight:800;font-size:40px;padding:26px 56px;border-radius:999px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.web{font-family:"Libre Franklin";font-weight:700;font-size:32px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.disc{font-size:20px;opacity:.7;line-height:1.3}
+#p1{background-image:url(../historias/fotos/diagonal.jpg);background-size:auto 2000px;background-position:-947px -390px}#p1::before{background:linear-gradient(180deg,rgba(8,12,30,.85) 0%,rgba(8,12,30,.25) 40%,rgba(8,12,30,.1) 60%,rgba(8,12,30,.85) 100%)}
+#p2{background-image:url(../historias/fotos/diagonal.jpg);background-size:auto 1440px;background-position:100% 0}#p2::before{background:linear-gradient(180deg,rgba(8,12,30,.85) 0%,rgba(8,12,30,.35) 35%,rgba(8,12,30,.35) 55%,rgba(8,12,30,.85) 100%)}
+#p3{background-image:url(../historias/fotos/motoquero.jpg);background-size:cover;background-position:50% 30%}#p3::before{background:linear-gradient(180deg,rgba(8,12,24,.8) 0%,rgba(8,12,24,.3) 35%,rgba(8,12,24,.4) 60%,rgba(8,12,24,.9) 100%)}
+#p4{background-image:url(../historias/fotos/obelisco.jpg);background-size:1080px auto;background-position:0 -300px}#p4::before{background:linear-gradient(180deg,rgba(6,20,50,.7) 0%,rgba(6,20,50,.1) 35%,rgba(6,20,50,.3) 55%,rgba(6,20,50,.85) 100%)}
+#p5{background-image:url(../historias/fotos/diagonal.jpg);background-size:auto 1700px;background-position:-548px -250px}#p5::before{background:linear-gradient(180deg,rgba(11,31,77,.85) 0%,rgba(11,31,77,.15) 38%,rgba(11,31,77,.15) 52%,rgba(11,31,77,.9) 100%)}
+#p6{background-image:url(../historias/fotos/obelisco.jpg);background-size:1080px auto;background-position:0 -479px}#p6::before{background:linear-gradient(180deg,rgba(0,40,70,.55) 0%,rgba(0,40,70,0) 35%,rgba(0,40,70,.15) 55%,rgba(0,30,60,.85) 100%)}
+.card{background:#fff;color:#14171F;border-radius:28px;box-shadow:0 30px 70px rgba(0,0,0,.4);padding:36px;display:grid;gap:22px;margin-top:auto}
+.card .t{display:flex;justify-content:space-between;align-items:center}
+.card .cod{font-family:"Libre Franklin";font-weight:800;font-size:32px}
+.card .tag{background:#E1F4EA;color:#12875A;font-weight:700;font-size:28px;padding:8px 20px;border-radius:999px}
+.card .st{display:grid;grid-template-columns:22px 1fr;gap:18px;font-size:28px;line-height:1.3}
+.card .st b{display:block;font-family:"Libre Franklin";font-size:30px}.card .st span{color:#545A66}
+.card .d{width:22px;height:22px;border-radius:50%;background:#0055FF;margin-top:6px}.card .d.ok{background:#12875A}
+.card .tg{display:flex;flex-wrap:wrap;gap:10px;border-top:1px solid #E2E5EB;padding-top:22px}
+.card .tg span{font-size:24px;font-weight:700;padding:7px 14px;border-radius:10px;background:#F4F6F9}
+.card .tg span:first-child{background:#E1F4EA;color:#12875A}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:auto}
+.cmp>div{border-radius:24px;padding:28px;display:grid;gap:14px;align-content:start;font-size:27px;line-height:1.28;backdrop-filter:blur(12px)}
+.cmp h3{font-family:"Libre Franklin";font-size:31px}
+.ant{background:rgba(253,234,234,.92);color:#5A1F1F}.ant h3{color:#C62F2F}
+.con{background:rgba(0,85,255,.9)}
+.bot{display:flex;justify-content:space-between;align-items:center;margin-top:34px;font-family:"Libre Franklin";font-weight:700;font-size:28px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+</style></head><body><svg width="0" height="0" style="position:absolute"><symbol id="g" viewBox="0 0 48 48"><polygon points="27,27 44,4 33,27"/><polygon points="36,31 47.5,23 32,29"/><polygon points="12,31 4,9 17,29"/><polygon points="4,9 0,16 6.5,12"/><polygon points="11,31 37,31 24,38"/><polygon points="11,31 24,25 37,31"/><polygon points="13,28 9,2 29,27"/><polygon points="13,28 9,2 19,27"/></symbol></svg>
+<template id="logo"><div class="marca"><svg viewBox="0 0 48 48" width="74" height="74" fill="#FFFFFF"><use href="#g"/></svg><div>acuse<small>Motomensajería</small></div></div></template>
+<div class="s" id="p1"><div class="top"><i class="L"></i><span class="pill" style="background:#fff;color:var(--blue)">Cada envío con constancia</span></div>
+<h1 style="margin-top:70px">Ahora sí,<br><span style="background:#fff;color:var(--blue);padding:0 16px;border-radius:16px">es seguro</span><br>pedir una moto.</h1>
+<p class="sub">Sabés quién lleva tus cosas, cuándo las retiró y quién las recibió.</p>
+<div class="bot" style="margin-top:auto"><span>CABA y Gran Buenos Aires</span><span>acusemensajeria.com.ar</span></div></div>
+
+<div class="s" id="p2"><div class="top"><i class="L"></i><span class="pill" style="background:#fff;color:var(--blue)">Por qué es distinto</span></div>
+<h1 style="margin-top:70px;font-size:88px">Mandar una moto ya no es un <span style="color:#7FB0FF">acto de fe.</span></h1>
+<div class="cmp"><div class="ant"><h3>Como era antes</h3><p>✕ No sabías quién se llevaba tus cosas.</p><p>✕ Para saber si llegó, había que llamar.</p><p>✕ Si decían "no llegó", no podías demostrarlo.</p></div>
+<div class="con"><h3>Con Acuse</h3><p>✓ Motoquero con nombre y legajo.</p><p>✓ Cada paso con hora y ubicación.</p><p>✓ Foto del sello y DNI de quien recibió.</p></div></div>
+<div class="bot"><span>CABA y GBA</span><span>acusemensajeria.com.ar</span></div></div>
+
+<div class="s" id="p3"><div class="top"><i class="L"></i><span class="pill" style="background:#fff;color:var(--blue)">Seguridad</span></div>
+<h1 style="margin-top:70px">Así queda<br>cada entrega.</h1>
+<div class="card"><div class="t"><span class="cod">Tu envío</span><span class="tag">✓ Entregado 11:42</span></div>
+<div class="st"><span class="d"></span><div><b>Retirado 10:15</b><span>Motoquero identificado, con nombre y legajo</span></div></div>
+<div class="st"><span class="d ok"></span><div><b>Entregado 11:42</b><span>Nombre, DNI y cargo de quien recibió</span></div></div>
+<div class="tg"><span>✓ QR verificado</span><span>Fotos</span><span>Hora y GPS</span><span>Constancia</span></div></div>
+<div class="bot"><span>Si te reclaman, tenés la prueba.</span><span>acusemensajeria.com.ar</span></div></div>
+
+<div class="s" id="p4"><div class="top"><i class="L"></i><span class="pill" style="background:#fff;color:var(--blue)">Cómo funciona</span></div>
+<h1 style="margin-top:70px">De tu mano<br>a destino.</h1>
+<div class="panel" style="margin-top:auto">
+<div class="row"><span class="n" style="background:var(--blue)">1</span><div>Pedís la moto<small>Qué hay que llevar, de dónde y a dónde</small></div></div>
+<div class="row"><span class="n" style="background:var(--blue)">2</span><div>Retiramos con QR<small>Escaneo, foto y quién lo entregó</small></div></div>
+<div class="row"><span class="n" style="background:var(--blue)">3</span><div>Seguimos cada paso<small>Con hora y ubicación</small></div></div>
+<div class="row"><span class="n" style="background:var(--ok)">4</span><div>Entregamos con constancia<small>Foto del sello, nombre, DNI y cargo</small></div></div></div>
+<div class="bot"><span>CABA y GBA</span><span>acusemensajeria.com.ar</span></div></div>
+
+<div class="s" id="p5"><div class="top"><i class="L"></i><span class="pill" style="background:var(--gold);color:var(--corp)">Corporativo</span></div>
+<h1 style="margin-top:70px;font-size:90px">Especialistas en trámites, <span style="color:var(--gold)">con constancia.</span></h1>
+<div class="panel" style="margin-top:auto;background:rgba(11,31,77,.75)">
+<div class="orgs"><div>IGJ</div><div>ARCA</div><div>AGIP</div><div>ARBA</div><div>RPI</div><div>PJN</div><div>CECBA</div><div>DGA</div></div>
+<div class="row" style="font-size:28px">Gestiones bancarias · Firma y devolución · Moto fija</div>
+<p class="disc">Acuse no es un organismo público ni tiene relación oficial con los organismos mencionados.</p></div>
+<div class="bot"><span>Estudios · Escribanías · Contables</span><span>acusemensajeria.com.ar</span></div></div>
+
+<div class="s" id="p6"><div class="top"><i class="L"></i><span class="pill" style="background:var(--sun);color:#3A2A00">Envíos en el día</span></div>
+<h1 style="margin-top:70px;font-size:96px">Tus paquetes llegan.<br><span style="color:var(--sun)">Y lo podés demostrar.</span></h1>
+<div class="panel" style="margin-top:auto;background:rgba(0,45,80,.65)">
+<div class="row"><span class="ic" style="background:var(--sun)"><svg viewBox="0 0 24 24" stroke="#3A2A00"><path d="M5 12l5 5 9-10"/></svg></span><div>Retiro en tu local</div></div>
+<div class="row"><span class="ic" style="background:var(--sun)"><svg viewBox="0 0 24 24" stroke="#3A2A00"><path d="M5 12l5 5 9-10"/></svg></span><div>Paquetes chicos y medianos, en el día</div></div>
+<div class="row"><span class="ic" style="background:var(--sun)"><svg viewBox="0 0 24 24" stroke="#3A2A00"><path d="M5 12l5 5 9-10"/></svg></span><div>Foto y DNI de quien recibió</div></div></div>
+<div class="bot"><span>Tiendas online · Comercios</span><span>acusemensajeria.com.ar</span></div></div>
+<script>document.querySelectorAll('.L').forEach(e=>e.replaceWith(document.getElementById('logo').content.cloneNode(true)))</script></body></html>
