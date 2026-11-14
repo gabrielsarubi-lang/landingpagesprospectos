@@ -31,7 +31,7 @@ Subí cada portada como historia, guardala en una destacada y elegila como tapa.
 
 ## Publicaciones (subir en este orden: 1 primero, 6 último)
 
-Instagram muestra lo último arriba, así que el post 1 (lanzamiento) queda abajo a la derecha, como en `preview-perfil.png`.
+Formato 1080×1440 (3:4), el que usa hoy la grilla de Instagram. Instagram muestra lo último arriba, así que el post 1 (lanzamiento) queda abajo a la derecha, como en `preview-perfil.png`.
 
 ### 1 · post-01-lanzamiento.png
 Ahora sí, es seguro pedir una moto. 🛵
