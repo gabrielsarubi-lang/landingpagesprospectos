@@ -1,0 +1,104 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600;700;800;900&family=Montserrat:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=block" rel="stylesheet">
+<style>
+:root{--blue:#0055FF;--ok:#12875A;--corp:#0B1F4D;--gold:#C9A961;--env:#00A8F0;--sun:#FFC21A}
+*{margin:0;box-sizing:border-box}
+body{background:#333;font-family:"Source Sans 3",sans-serif;color:#fff}
+.s{position:relative;width:1080px;height:1920px;overflow:hidden;background-repeat:no-repeat;display:flex;flex-direction:column;padding:200px 80px 300px}
+.s::before{content:"";position:absolute;inset:0;z-index:0}
+.s>*{position:relative;z-index:1}
+.top{display:flex;align-items:center;justify-content:space-between}
+.marca{display:flex;align-items:center;gap:12px;font-family:Montserrat;font-weight:900;font-size:50px;letter-spacing:-.045em;line-height:1}
+.marca small{display:block;font-size:14px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-top:5px}
+.pill{font-family:"Libre Franklin";font-weight:800;font-size:28px;padding:12px 26px;border-radius:999px;letter-spacing:.02em}
+h1{font-family:"Libre Franklin";font-weight:900;font-size:104px;line-height:1;letter-spacing:-.035em;text-shadow:0 6px 30px rgba(0,0,0,.35)}
+.sub{font-size:36px;line-height:1.35;margin-top:24px;text-shadow:0 2px 14px rgba(0,0,0,.5)}
+.panel{margin-top:44px;background:rgba(10,14,28,.62);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.16);border-radius:30px;padding:38px 40px;display:grid;gap:24px}
+.row{display:flex;gap:20px;align-items:flex-start;font-size:33px;line-height:1.25;font-weight:600}
+.row small{display:block;font-size:26px;font-weight:400;opacity:.8;margin-top:4px}
+.ic{flex:none;width:56px;height:56px;border-radius:16px;display:grid;place-items:center}
+.ic svg{width:30px;height:30px;fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.n{flex:none;width:60px;height:60px;border-radius:50%;display:grid;place-items:center;font-family:"Libre Franklin";font-weight:800;font-size:30px}
+.orgs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.orgs div{height:78px;display:grid;place-items:center;border:2px solid var(--gold);border-radius:6px;font-family:"Libre Franklin";font-weight:800;font-size:28px;background:rgba(11,31,77,.55)}
+.foot{margin-top:auto;display:flex;flex-direction:column;align-items:center;gap:14px}
+.cta{font-family:"Libre Franklin";font-weight:800;font-size:40px;padding:26px 56px;border-radius:999px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.web{font-family:"Libre Franklin";font-weight:700;font-size:32px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.disc{font-size:20px;opacity:.7;line-height:1.3}
+/* fondos */
+#seguridad{background-image:url(fotos/motoquero.jpg);background-size:cover;background-position:50% 30%}
+#seguridad::before{background:linear-gradient(180deg,rgba(8,12,24,.75) 0%,rgba(8,12,24,.25) 30%,rgba(8,12,24,.55) 55%,rgba(8,12,24,.92) 100%)}
+#corporativo{background-image:url(fotos/diagonal.jpg);background-size:auto 2300px;background-position:-932px -400px}
+#corporativo::before{background:linear-gradient(180deg,rgba(11,31,77,.8) 0%,rgba(11,31,77,.15) 34%,rgba(11,31,77,.1) 50%,rgba(11,31,77,.85) 100%)}
+#envios{background-image:url(fotos/obelisco.jpg);background-size:cover;background-position:50% 50%}
+#envios::before{background:linear-gradient(180deg,rgba(0,40,70,.5) 0%,rgba(0,40,70,0) 30%,rgba(0,40,70,.1) 55%,rgba(0,30,60,.8) 100%)}
+#como{background-image:url(fotos/obelisco.jpg);background-size:auto 3000px;background-position:-329px -300px}
+#como::before{background:linear-gradient(180deg,rgba(6,20,50,.7) 0%,rgba(6,20,50,.15) 30%,rgba(6,20,50,.45) 50%,rgba(6,20,50,.9) 100%)}
+#cotizar{background-image:url(fotos/diagonal.jpg);background-size:auto 2600px;background-position:-1519px -652px}
+#cotizar::before{background:linear-gradient(180deg,rgba(8,12,30,.8) 0%,rgba(8,12,30,.2) 32%,rgba(8,12,30,.1) 55%,rgba(8,12,30,.9) 100%)}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><symbol id="g" viewBox="0 0 48 48"><polygon points="27,27 44,4 33,27"/><polygon points="36,31 47.5,23 32,29"/><polygon points="12,31 4,9 17,29"/><polygon points="4,9 0,16 6.5,12"/><polygon points="11,31 37,31 24,38"/><polygon points="11,31 24,25 37,31"/><polygon points="13,28 9,2 29,27"/><polygon points="13,28 9,2 19,27"/></symbol></svg>
+<template id="logo"><div class="marca"><svg viewBox="0 0 48 48" width="74" height="74" fill="#FFFFFF"><use href="#g"/></svg><div>acuse<small>Motomensajería</small></div></div></template>
+
+<div class="s" id="seguridad">
+  <div class="top"><i class="L"></i><span class="pill" style="background:#fff;color:var(--blue)">Seguridad</span></div>
+  <h1 style="margin-top:110px">Sabés quién<br>lleva tus cosas.</h1>
+  <p class="sub">Cada envío con constancia, de punta a punta.</p>
+  <div class="panel">
+    <div class="row"><span class="ic" style="background:var(--blue)"><svg viewBox="0 0 24 24" stroke="#fff"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></span><div>Motoquero identificado<small>Con nombre y legajo</small></div></div>
+    <div class="row"><span class="ic" style="background:var(--blue)"><svg viewBox="0 0 24 24" stroke="#fff"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 20h-3"/></svg></span><div>QR en cada envío<small>Se escanea al retirar y al entregar</small></div></div>
+    <div class="row"><span class="ic" style="background:var(--blue)"><svg viewBox="0 0 24 24" stroke="#fff"><path d="M4 7h3l2-3h6l2 3h3v13H4z"/><circle cx="12" cy="13" r="4"/></svg></span><div>Foto en retiro y entrega<small>Del sobre cerrado y del sello o cargo</small></div></div>
+    <div class="row"><span class="ic" style="background:var(--ok)"><svg viewBox="0 0 24 24" stroke="#fff"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="12" r="2.5"/><path d="M14 10h4M14 14h4"/></svg></span><div>Quién recibió<small>Nombre, DNI y cargo, con hora y ubicación</small></div></div>
+  </div>
+  <div class="foot"><span class="web">acusemensajeria.com.ar</span></div>
+</div>
+
+<div class="s" id="corporativo">
+  <div class="top"><i class="L"></i><span class="pill" style="background:var(--gold);color:var(--corp)">Corporativo</span></div>
+  <h1 style="margin-top:110px">Especialistas<br>en trámites,<br><span style="color:var(--gold)">con constancia.</span></h1>
+  <div class="panel" style="background:rgba(11,31,77,.72);margin-top:auto">
+    <div class="orgs"><div>IGJ</div><div>ARCA</div><div>AGIP</div><div>ARBA</div><div>RPI</div><div>PJN</div><div>CECBA</div><div>DGA</div></div>
+    <div class="row" style="font-size:30px">Gestiones bancarias · Firma y devolución · Documentación con acuse · Moto fija</div>
+    <div class="row" style="font-size:26px;font-weight:400;opacity:.85">Estudios jurídicos · Escribanías · Contables · Aseguradoras · Despachantes</div>
+    <p class="disc">Acuse no es un organismo público ni tiene relación oficial con los organismos mencionados.</p>
+  </div>
+  <div class="foot" style="margin-top:40px"><span class="cta" style="background:var(--gold);color:var(--corp)">Pedí una propuesta</span><span class="web">acusemensajeria.com.ar</span></div>
+</div>
+
+<div class="s" id="envios">
+  <div class="top"><i class="L"></i><span class="pill" style="background:var(--sun);color:#3A2A00">Envíos en el día</span></div>
+  <h1 style="margin-top:110px">Tus paquetes llegan.<br><span style="color:var(--sun)">Y lo podés demostrar.</span></h1>
+  <div class="panel" style="margin-top:auto;background:rgba(0,45,80,.62)">
+    <div class="row"><span class="ic" style="background:var(--env)"><svg viewBox="0 0 24 24" stroke="#fff"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span><div>Paquetes chicos y medianos<small>Retirados y entregados en CABA y GBA</small></div></div>
+    <div class="row"><span class="ic" style="background:var(--env)"><svg viewBox="0 0 24 24" stroke="#fff"><path d="M3 10l9-6 9 6v10H3z"/><path d="M9 20v-6h6v6"/></svg></span><div>Retiro en tu local<small>Llevamos los pedidos a tus clientes</small></div></div>
+    <div class="row"><span class="ic" style="background:var(--env)"><svg viewBox="0 0 24 24" stroke="#fff"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div>Envíos programados<small>Días y horarios fijos</small></div></div>
+    <div class="row"><span class="ic" style="background:var(--sun)"><svg viewBox="0 0 24 24" stroke="#3A2A00"><path d="M5 12l5 5 9-10"/></svg></span><div>Entrega comprobada<small>Si tu cliente reclama, tenés la prueba</small></div></div>
+  </div>
+  <div class="foot" style="margin-top:40px"><span class="cta" style="background:var(--sun);color:#3A2A00">Hacé tu envío</span><span class="web">acusemensajeria.com.ar</span></div>
+</div>
+
+<div class="s" id="como">
+  <div class="top"><i class="L"></i><span class="pill" style="background:#fff;color:var(--blue)">Cómo funciona</span></div>
+  <h1 style="margin-top:110px">De tu mano<br>a destino.</h1>
+  <p class="sub">Sin perderle el rastro.</p>
+  <div class="panel" style="margin-top:auto">
+    <div class="row"><span class="n" style="background:var(--blue)">1</span><div>Pedís la moto<small>Qué hay que llevar, de dónde y a dónde</small></div></div>
+    <div class="row"><span class="n" style="background:var(--blue)">2</span><div>Retiramos con QR<small>Escaneo, foto y quién lo entregó</small></div></div>
+    <div class="row"><span class="n" style="background:var(--blue)">3</span><div>Seguimos cada paso<small>Con hora y ubicación</small></div></div>
+    <div class="row"><span class="n" style="background:var(--ok)">4</span><div>Entregamos con constancia<small>Foto del sello, nombre, DNI y cargo</small></div></div>
+  </div>
+  <div class="foot" style="margin-top:40px"><span class="web">acusemensajeria.com.ar</span></div>
+</div>
+
+<div class="s" id="cotizar">
+  <div class="top"><i class="L"></i><span class="pill" style="background:#fff;color:var(--blue)">Cotizar</span></div>
+  <h1 style="margin-top:110px">Pedí tu moto<br>en un minuto.</h1>
+  <p class="sub">Cotizá al instante y te confirmamos horario y precio antes del retiro.</p>
+  <div class="foot">
+    <span class="cta" style="background:#fff;color:var(--blue);font-size:46px">Cotizá en la web →</span>
+    <span class="web" style="font-size:40px">acusemensajeria.com.ar</span>
+    <span class="web" style="font-size:30px;opacity:.9">o escribinos por WhatsApp</span>
+  </div>
+</div>
+<script>document.querySelectorAll('.L').forEach(e=>e.replaceWith(document.getElementById('logo').content.cloneNode(true)))</script>
+</body></html>
